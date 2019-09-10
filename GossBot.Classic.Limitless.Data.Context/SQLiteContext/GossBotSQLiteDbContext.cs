@@ -38,4 +38,3 @@ namespace GossBot.Classic.Data.Context.SQLiteContext
         }
     }
 }
-}
