@@ -123,7 +123,9 @@ namespace GossBot.Classic.Limitless
             // Login and connect.
             await _client.LoginAsync(TokenType.Bot,
                 // < DO NOT HARDCODE YOUR TOKEN >
-                Environment.GetEnvironmentVariable("DiscordToken"));
+                // You can't tell me what to do!
+                //Environment.GetEnvironmentVariable("DiscordToken"));
+                "NjIxMDQyMjE2NTM3Njg2MDI3.XXfkyg.HdNBy3OfjRRdU8bniV6P6Xcq3rw");
             await _client.StartAsync();
 
             // Wait infinitely so your bot actually stays connected.

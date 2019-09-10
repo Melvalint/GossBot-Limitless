@@ -11,7 +11,7 @@ namespace GossBot.Classic.Handlers.Commands
         public async Task MarkAbsentAsync([Summary("The (optional) user to get info from")]
         SocketUser user = null)
         {
-            var userInfo = user ?? Context.Client.CurrentUser;
+            var userInfo = user ?? Context.Guild.GetUser(Context.User.Id);
             // TODO: Implement Database call to persist this record.
             await ReplyAsync($"{userInfo.Username}#{userInfo.Discriminator} has been marked as absent.");
         }
