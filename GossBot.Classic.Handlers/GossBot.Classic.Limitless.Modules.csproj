@@ -13,4 +13,8 @@
     <Folder Include="RaidLootAssignment\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GossBot.Classic.Data.Managers\GossBot.Classic.Data.Managers.csproj" />
+  </ItemGroup>
+
 </Project>

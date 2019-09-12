@@ -25,9 +25,9 @@ namespace GossBot.Classic.Data.Stores.RaidAttendance
             return AutoSaveChanges ? Context.SaveChangesAsync() : Task.CompletedTask;
         }
 
-        public async Task<GossBotDataResult> AddAbscense(RaidAttendanceEntity abscense)
+        public async Task<GossBotDataResult> AddAbsenceAsync(RaidAttendanceEntity absence)
         {
-            Context.Add(abscense);
+            Context.Add(absence);
             await SaveChanges();
 
             return GossBotDataResult.Success;

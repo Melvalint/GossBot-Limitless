@@ -1,6 +1,9 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using GossBot.Classic.Data.Context.SQLiteContext;
+using GossBot.Classic.Data.Managers.RaidAttendance;
+using GossBot.Classic.Data.Stores.RaidAttendance;
 using GossBot.Classic.Handlers.Commands;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -71,10 +74,11 @@ namespace GossBot.Classic.Limitless
         // If this method is getting pretty long, you can seperate it out into another file using partials.
         private static IServiceProvider ConfigureServices()
         {
-            var map = new ServiceCollection();
+            var map = new ServiceCollection()
                 // Repeat this for all the service classes
                 // and other dependencies that your commands might need.
-                //.AddSingleton(new SomeServiceClass());
+                .AddSingleton<IRaidAttendanceStore, RaidAttendanceStore<GossBotSQLiteDbContext>>();
+                //.AddSingleton();
 
             // When all your required services are in the collection, build the container.
             // Tip: There's an overload taking in a 'validateScopes' bool to make sure

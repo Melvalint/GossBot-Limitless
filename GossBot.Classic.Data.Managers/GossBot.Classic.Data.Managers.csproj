@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GossBot.Classic.Data.Services\GossBot.Classic.Data.Stores.csproj" />
+  </ItemGroup>
+
 </Project>

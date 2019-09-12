@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GossBot.Classic.Handlers\GossBot.Classic.Limitless.Modules.csproj" />
+    <ProjectReference Include="..\GossBot.Classic.Limitless.Data.Context\GossBot.Classic.Data.Context.SQLite.csproj" />
   </ItemGroup>
 
 </Project>
