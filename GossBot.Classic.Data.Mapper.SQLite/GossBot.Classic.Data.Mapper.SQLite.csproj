@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GossBot.Classic.Data.Mapper.SQLite\GossBot.Classic.Data.Mapper.SQLite.csproj" />
     <ProjectReference Include="..\GossBot.Classic.Limitless.Data.Models\GossBot.Classic.Data.Models.csproj" />
   </ItemGroup>
 

@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GossBot.Classic.Limitless.Data.Context\GossBot.Classic.Data.Context.SQLite.csproj" />
+  </ItemGroup>
+
 </Project>
